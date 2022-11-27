@@ -114,11 +114,11 @@ class OneToOne(dict):
 
     def setdefault(self, key, default: Incomplete | None = ...): ...
 
-    def update(
+    def update( # type: ignore
             self,
             dict_or_iterable: dict[_KT, _VT] | Iterable[object],
             **kw,
-    ) -> NoReturn: ...  # type: ignore
+    ) -> NoReturn: ...
 
 
 class ManyToMany:
